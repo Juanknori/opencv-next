@@ -3,4 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  webpack5: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, path:false, "crypto": false, process: false  };
+    return config;
+  },
+}

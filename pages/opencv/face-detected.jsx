@@ -5,7 +5,7 @@ import Webcam from "react-webcam";
 import { Typography } from '@mui/material';
 import { MainLayout } from '../../components/layouts';
 import cv from "@techstark/opencv-js";
-import { loadHaarFaceModels, detectHaarFace } from "../../public/scripts/haarFaceDetection";
+import { loadHaarFaceModels, detectHaarFace } from "../haarFaceDetection";
 
 export default function Home() {
 

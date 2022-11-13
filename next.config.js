@@ -10,4 +10,5 @@ module.exports = {
     config.resolve.fallback = { fs: false, path:false, "crypto": false, process: false  };
     return config;
   },
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
 }
